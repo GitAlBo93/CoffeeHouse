@@ -213,13 +213,22 @@ h3{
 
 .AI_img2{
     background-image: url("../img/about-2.jpg");
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 110%;
+    transition: 1s;
+
+    /* background-image: url("../img/about-2.jpg");
     background-position: 0px;
-    transition: all 2s;
+    transition: all 2s; */
 }
 
 .AI_img3{
     background-image: url("../img/about-3.jpg");
-    background-position: -40px;
+    background-position: 0px;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    transition: 2s;
 }
 
 .AI_img4{
@@ -227,12 +236,13 @@ h3{
 }
 
 .AI_img2:hover{
-    transform: scale(1.2);
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
 }
 
 .AI_img3:hover{
     background-size: 100%;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 }
 
 .AI_img1, .AI_img4{
