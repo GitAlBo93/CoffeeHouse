@@ -212,14 +212,53 @@ h3{
 
 .About_img{
     display: grid;
+    grid-template-columns: 660px 660px;
+    grid-template-rows: 590px 590px;
+    grid-gap: 20px;
  
 }
 
-.About_img img{
+.About_img div{
+    border-radius: 13px;
+}
+
+.AI_img1{
+    background-image: url("../img/about-1.jpg");
+        }
+
+.AI_img2{
+    background-image: url("../img/about-2.jpg");
+    background-position: -40px;
+}
+
+.AI_img3{
+    background-image: url("../img/about-3.jpg");
+    background-position: -40px;
+}
+
+.AI_img4{
+    background-image: url("../img/about-4.jpg");
+}
+
+.AI_img1, .AI_img4{
+    width: 660px;
+    height: 590px;
+}
+
+.AI_img2, .AI_img3{
+    width: 660px;
+    height: 430px;
+}
+
+.AI_img2, .AI_img3:hover{
+    transform: scale(2.3);
+}
+
+/* .About_img img{
     border-radius: 20px;
     
 
-}
+} */
 
 .Mobile-app{
     display: flex;
