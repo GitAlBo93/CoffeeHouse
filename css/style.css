@@ -229,7 +229,7 @@ h3{
 .AI_img2{
     background-image: url("../img/about-2.jpg");
     background-position: 0px;
-    /* transition-duration: background-size 2s; */
+    transition-duration: background-size 2s;
 }
 
 .AI_img3{
@@ -243,8 +243,14 @@ h3{
 
 .AI_img2:hover{
     background-size: 100%;
-    
+    background-repeat: no-repeat;
 }
+
+.AI_img3:hover{
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 .AI_img1, .AI_img4{
     width: 660px;
     height: 590px;
