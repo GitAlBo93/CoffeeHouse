@@ -228,7 +228,8 @@ h3{
 
 .AI_img2{
     background-image: url("../img/about-2.jpg");
-    background-position: -40px;
+    background-position: 0px;
+    /* transition-duration: background-size 2s; */
 }
 
 .AI_img3{
@@ -240,6 +241,10 @@ h3{
     background-image: url("../img/about-4.jpg");
 }
 
+.AI_img2:hover{
+    background-size: 100%;
+    
+}
 .AI_img1, .AI_img4{
     width: 660px;
     height: 590px;
@@ -248,11 +253,10 @@ h3{
 .AI_img2, .AI_img3{
     width: 660px;
     height: 430px;
+    
 }
 
-.AI_img2, .AI_img3:hover{
-    transform: scale(2.3);
-}
+
 
 /* .About_img img{
     border-radius: 20px;
