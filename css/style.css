@@ -1,0 +1,265 @@
+body{
+    max-width: 1440px;
+    background-color: #E1D4C9;
+    margin: auto;
+}
+
+h1{
+    font-family: Inter;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 105%;
+    color: var(--Text-Light, #E1D4C9);
+    font-feature-settings: 'clig' off, 'liga' off;
+}
+
+h2{
+
+    color: var(--Text-Dark, #403F3D);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.h2_accent{
+    color: var(--Text-Accent, #B0907A);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+h3{
+    color: var(--Text-Dark, #403F3D);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.medium_text{
+    color: var(--Text-Dark, #403F3D);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.link_text{
+    color: var(--Text-Dark, #403F3D);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.offer p{
+    text-align: left;
+}
+
+.medium_text_hero{
+    color: var(--Text-Light, #E1D4C9);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.Enjoy_big{
+    color:  #B0907A;
+    font-family: Inter;
+    font-size: 72px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 105%;
+}
+
+.header{
+    flex-direction: column;
+    display: flex;
+}
+
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:space-between;
+    border: 3px solid black;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    color: var(--Text-Dark, #403F3D);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.coffee-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+/*Шапка_Menu*/
+.menu-item{
+    margin: 10px;
+}
+
+
+.menu-item:hover{
+    text-decoration: underline;
+}
+
+
+/*Шапка_IMG_Text_Button*/
+.hero {
+    border: 3px solid black;
+    display: flex;
+    padding: 100px;
+    flex-direction: column;
+    gap: 36px;
+    align-self: stretch;
+    background-image: url("../img/img-hero.jpg");
+    border-radius: 40px;
+    max-width: 1360px;
+    background-repeat: no-repeat;
+    }
+
+.btn-menu{
+    width: 200px;
+    padding: 20px 78px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: var(--Background-Body, #E1D4C9);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+
+.favorite-coffee{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider_Fcoffee{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1360px;
+    justify-content: space-between;
+}
+
+.slider_Fcoffee img{
+    width: 60px;
+    height: 60px;
+}
+
+.FC_menu img{
+    width: 480px;
+    height: 480px;
+}
+
+.f-span{
+    color: var(--Text-Accent, #B0907A);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+/* .About_img{
+    display: flex;
+    flex-direction: row;
+}
+
+.About_Img_col1{
+    display: flex;
+    flex-direction: column;
+}
+
+.About_Img_col2{
+    display: flex;
+    flex-direction: column;
+} */
+
+.About_img{
+    display: grid;
+ 
+}
+
+.About_img img{
+    border-radius: 20px;
+    
+
+}
+
+.Mobile-app{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.offer{
+    align-self: center;
+}
+
+.btn-offer{
+    gap: 20px;
+}
+
+.Contacts{
+    display: flex;
+    flex-direction: row;
+    background-color: #665F55;
+    border-radius: 40px;
+    max-width: 1360px;
+    gap: 100px;
+    padding: 100px;
+}
+
+.contacts-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts-info h3{
+    text-align: left;
+}
+
+.CI-link{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.text-link{
+    padding-left: 9px;
+}
