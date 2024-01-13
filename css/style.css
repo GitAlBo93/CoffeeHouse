@@ -160,6 +160,12 @@ h3{
     line-height: 150%;
 }
 
+.btn-menu:hover{
+
+    left: 100px;
+
+}
+
 
 .favorite-coffee{
     display: flex;
@@ -197,10 +203,13 @@ h3{
 
 .About_img{
     display: grid;
-    grid-template-columns: 660px 660px;
-    grid-template-rows: 590px 590px;
+    /*grid-template-columns: 660px 660px;
+    grid-template-rows: 590px 590px;*/
     grid-gap: 20px;
- 
+	grid-template-areas:
+  "A B"
+  "A C"
+  "D C";
 }
 
 .About_img div{
@@ -209,14 +218,24 @@ h3{
 
 .AI_img1{
     background-image: url("../img/about-1.jpg");
+	/*width: 660px;*/
+    height: 590px;
+	background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 110%;
+    transition: 1s;
+	grid-area: A;
         }
 
 .AI_img2{
     background-image: url("../img/about-2.jpg");
+	/*width: 660px;*/
+    height: 430px;
     background-repeat: no-repeat;
     background-position: 0;
     background-size: 110%;
     transition: 1s;
+	grid-area: B;
 
     /* background-image: url("../img/about-2.jpg");
     background-position: 0px;
@@ -225,14 +244,31 @@ h3{
 
 .AI_img3{
     background-image: url("../img/about-3.jpg");
-    background-position: 0px;
+	/*width: 660px;*/
+    height: 430px;
+    /* background-position: 0px; */
+    background-position-x: 0px;
+    background-position-y: -200px;
     background-repeat: no-repeat;
     background-size: 110%;
-    transition: 2s;
+    transition: 1s;
+	grid-area: D;
 }
 
 .AI_img4{
     background-image: url("../img/about-4.jpg");
+	/*width: 660px;*/
+    height: 590px;
+	background-repeat: no-repeat;
+    background-position: 0;
+    background-size: 110%;
+    transition: 1s;
+	grid-area: C;
+}
+
+.AI_img1:hover{
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
 }
 
 .AI_img2:hover{
@@ -245,7 +281,12 @@ h3{
     /* background-repeat: no-repeat; */
 }
 
-.AI_img1, .AI_img4{
+.AI_img4:hover{
+    background-size: 100%;
+    /* background-repeat: no-repeat; */
+}
+
+/*.AI_img1, .AI_img4{
     width: 660px;
     height: 590px;
 }
@@ -255,7 +296,7 @@ h3{
     height: 430px;
     
 }
-
+*/
 
 .Mobile-app{
     display: flex;
@@ -267,6 +308,7 @@ h3{
 }
 
 .btn-offer{
+    display: flex;   
     gap: 20px;
 }
 
