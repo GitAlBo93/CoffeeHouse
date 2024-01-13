@@ -114,6 +114,11 @@ h3{
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
+    gap: 10px;
+}
+
+.header-menu a{
+    text-decoration: none;
 }
 
 .coffee-menu {
@@ -122,14 +127,15 @@ h3{
 }
 
 /*Шапка_Menu*/
-.menu-item{
+/* .menu-item{
+    text-decoration: none;
     margin: 10px;
 }
 
 
 .menu-item:hover{
     text-decoration: underline;
-}
+} */
 
 
 /*Шапка_IMG_Text_Button*/
@@ -148,29 +154,32 @@ h3{
 
     .btn-menu{
     display: flex;
-    
+    text-decoration: none;
     width: 200px;    
     border-radius: 100px;
     background: var(--Background-Body, #E1D4C9);
     justify-content: center;
     align-items: center;
-    transition: 1s;
+    
+    
     
     /* padding: 20px 78px; */
 }
 
 .btn-menu p{
-  
+    
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
     line-height: 150%;
     font-weight: 600;
-    
+    transform: translateX(10px);
+    transition: all ease 0.5s;
 }
 
 .btn-menu img{
     opacity: 0;
+    transition: all ease 0.5s;
     }
 
 .btn-menu:hover img{
