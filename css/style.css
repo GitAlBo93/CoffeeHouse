@@ -170,11 +170,11 @@ h3{
 }
 
 .btn-menu img{
-    display: none;
+    opacity: 0;
     }
 
 .btn-menu:hover img{
-        display: initial;
+        opacity: 1;
         transition: 1s;
          }
 
