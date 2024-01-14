@@ -101,7 +101,7 @@ h3{
     flex-wrap: wrap;
     align-items:center;
     justify-content:space-between;
-    border: 3px solid black;
+    /* border: 3px solid black; */
 }
 
 .nav{
@@ -123,7 +123,7 @@ h3{
     text-decoration: none;
 }
 
-.menu-item a::before{
+.menu-item a:before{
     content: "";
     position: absolute;
     display: block;
@@ -136,13 +136,9 @@ h3{
     transition: transform 0.5s ease;
 }
 
-.menu-item a:hover::before{
+.menu-item a:hover:before{
     transform: scaleX(1);
 }
-
-/* .header-menu a{
-    text-decoration: none;
-} */
 
 .coffee-menu {
     display: flex;
@@ -165,33 +161,21 @@ h3{
     
 }
 
-/*Шапка_Menu*/
-/* .menu-item{
-    text-decoration: none;
-    margin: 10px;
-}
-
-
-.menu-item:hover{
-    text-decoration: underline;
-} */
-
-
-/*Шапка_IMG_Text_Button*/
 .hero {
-    border: 3px solid black;
+    /* border: 3px solid black; */
     display: flex;
     padding: 100px;
     flex-direction: column;
     gap: 36px;
     align-self: stretch;
     background-image: url("../img/img-hero.jpg");
+    background-size: 110%;
     border-radius: 40px;
     max-width: 1360px;
     background-repeat: no-repeat;
-    }
+}
 
-    .btn-menu{
+.btn-menu{
     display: flex;
     text-decoration: none;
     width: 200px;    
@@ -199,14 +183,9 @@ h3{
     background: var(--Background-Body, #E1D4C9);
     justify-content: center;
     align-items: center;
-    
-    
-    
-    /* padding: 20px 78px; */
 }
 
 .btn-menu p{
-    
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -219,18 +198,17 @@ h3{
 .btn-menu img{
     opacity: 0;
     transition: all ease 0.5s;
-    }
+}
 
 .btn-menu:hover img{
-        opacity: 1;
-        transition: 1s;
-         }
+    opacity: 1;
+    transition: 1s;
+}
 
 .btn-menu:hover p{
     transform: translateX(-10px);
     transition: 1s;
 }
-
 
 .favorite-coffee{
     display: flex;
@@ -268,8 +246,6 @@ h3{
 
 .About_img{
     display: grid;
-    /*grid-template-columns: 660px 660px;
-    grid-template-rows: 590px 590px;*/
     grid-gap: 20px;
 	grid-template-areas:
   "A B"
@@ -290,7 +266,7 @@ h3{
     background-size: 110%;
     transition: 1s;
 	grid-area: A;
-        }
+}
 
 .AI_img2{
     background-image: url("../img/about-2.jpg");
@@ -301,10 +277,6 @@ h3{
     background-size: 110%;
     transition: 1s;
 	grid-area: B;
-
-    /* background-image: url("../img/about-2.jpg");
-    background-position: 0px;
-    transition: all 2s; */
 }
 
 .AI_img3{
@@ -333,35 +305,19 @@ h3{
 
 .AI_img1:hover{
     background-size: 100%;
-    /* background-repeat: no-repeat; */
-}
+    }
 
 .AI_img2:hover{
     background-size: 100%;
-    /* background-repeat: no-repeat; */
-}
+    }
 
 .AI_img3:hover{
     background-size: 100%;
-    /* background-repeat: no-repeat; */
-}
+    }
 
 .AI_img4:hover{
     background-size: 100%;
-    /* background-repeat: no-repeat; */
-}
-
-/*.AI_img1, .AI_img4{
-    width: 660px;
-    height: 590px;
-}
-
-.AI_img2, .AI_img3{
-    width: 660px;
-    height: 430px;
-    
-}
-*/
+ }
 
 .Mobile-app{
     display: flex;
@@ -375,6 +331,15 @@ h3{
 .btn-offer{
     display: flex;   
     gap: 20px;
+}
+
+.btn-offer a{
+    border: 3px solid black;
+    border-radius: 40px;
+}
+
+.btn-offer a:hover{
+    background-color: #665F55;
 }
 
 .Contacts{
