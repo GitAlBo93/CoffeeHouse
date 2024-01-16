@@ -359,7 +359,13 @@ h3{
 .BtnOffer a:hover{
     background-color: #665F55;
     color: #E1D4C9;
-    transition: 1ms;
+    transition: all ease 1s;
+}
+
+.BtnOffer a:hover h3{
+    color: #E1D4C9;
+    transition: all ease 1s;
+    
 }
 
 .BtnApp{
