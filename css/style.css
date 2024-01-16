@@ -328,39 +328,72 @@ h3{
     align-self: center;
 }
 
+.BtnOffer a{
+    text-decoration: none;
+    border: 1px solid #403F3D;
+    border-radius: 40px;
+
+    color: var(--Text-Dark, #403F3D);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
 .BtnOffer{
     display: flex;
     flex-direction: row;   
-    gap: 10px;
+    gap: 20px;
 }
 
-.BtnOffer a{
-    border: 3px solid black;
-    border-radius: 40px;
+.BtnOffer p{
+    margin-bottom: 0;
+}
+
+.BtnOffer h3{
+    margin-top: 8px;
+    font-size: 21px;
 }
 
 .BtnOffer a:hover{
     background-color: #665F55;
+    color: #E1D4C9;
+    transition: 1ms;
 }
 
 .BtnApp{
     display: flex;
     flex-direction: row;
+    width: 200px;
+    height: 50px;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
 }
 
 .BtnGoogle{
-    display: grid;
-    grid-template-areas:
-  "A B";
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    height: 50px;
+    padding: 12px 20px;
+    align-items: center;
+    gap: 8px;
     
 }
 
 .BtnGoogleImg{
-    grid-area: A;
+    /* grid-area: A; */
+    align-self: center;
 }
 
 .BtnGoogleText{
-    grid-area: B;
+    margin: 10px;
+}
+
+.BtnAppText{
+    margin: 10px;
 }
 
 .Contacts{
