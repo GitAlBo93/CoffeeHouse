@@ -328,18 +328,39 @@ h3{
     align-self: center;
 }
 
-.btn-offer{
-    display: flex;   
-    gap: 20px;
+.BtnOffer{
+    display: flex;
+    flex-direction: row;   
+    gap: 10px;
 }
 
-.btn-offer a{
+.BtnOffer a{
     border: 3px solid black;
     border-radius: 40px;
 }
 
-.btn-offer a:hover{
+.BtnOffer a:hover{
     background-color: #665F55;
+}
+
+.BtnApp{
+    display: flex;
+    flex-direction: row;
+}
+
+.BtnGoogle{
+    display: grid;
+    grid-template-areas:
+  "A B";
+    
+}
+
+.BtnGoogleImg{
+    grid-area: A;
+}
+
+.BtnGoogleText{
+    grid-area: B;
 }
 
 .Contacts{
