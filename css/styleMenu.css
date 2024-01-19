@@ -1,0 +1,60 @@
+.menuCarousel{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.menuCarouselButton{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid;
+    border-radius: 10px;
+}
+.menuCards{
+    display: grid;
+    grid-template-areas: 
+    "A B C D"
+    "E F G H";
+    gap: 40px;
+    max-width: 1440px;
+    
+}
+.menuCard1{
+    grid-area: A;
+    border: 2px solid;
+    border-radius: 40px;
+}
+.menuCard2{
+    grid-area: B;
+    border: 2px solid;
+    border-radius: 40px;
+}
+.menuCard3{
+    grid-area: C;
+    border: 2px solid;
+    border-radius: 40px;
+}
+.menuCard4{
+    grid-area: D;
+    border: 2px solid;
+    border-radius: 40px;
+}
+.menuCard5{
+    grid-area: E;
+    border: 2px solid;
+    border-radius: 40px;
+}
+.menuCard6{
+    grid-area: F;
+    border: 2px solid;
+    border-radius: 40px;
+}
+.menuCard7{
+    grid-area: G;
+    border: 2px solid;
+    border-radius: 40px;
+}
+.menuCard8{
+    grid-area: H;
+    border: 2px solid;
+    border-radius: 40px;
+}
