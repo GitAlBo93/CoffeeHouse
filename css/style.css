@@ -25,6 +25,10 @@ h2{
     line-height: 125%;
 }
 
+.offer h2{
+    color: #E1D4C9;
+}
+
 .h2_accent{
     color: var(--Text-Accent, #B0907A);
     font-feature-settings: 'clig' off, 'liga' off;
@@ -420,6 +424,7 @@ h3{
 
 .contacts-info h3{
     text-align: left;
+    color: #E1D4C9;
 }
 
 .CI-link{
@@ -428,6 +433,34 @@ h3{
     gap: 16px;
 }
 
+.CI-link a{
+    color: #E1D4C9;
+    position: relative;
+    text-decoration: none;
+}
+
 .text-link{
     padding-left: 9px;
+}
+
+.CI-link P{
+    color: #E1D4C9;
+    margin: 0%;
+}
+
+.CI-link a:before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #E1D4C9;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.CI-link a:hover:before{
+    transform: scaleX(1);
 }
