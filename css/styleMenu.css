@@ -1,7 +1,11 @@
+.menuDescription{
+    text-align: center;
+}
 .menuCarousel{
     display: flex;
     flex-direction: row;
     gap: 20px;
+    justify-content: center;
 }
 .menuCarouselButton{
     display: flex;
@@ -16,6 +20,8 @@
     "E F G H";
     gap: 40px;
     max-width: 1440px;
+    text-align: left;
+    max-width: 1360px;
     
 }
 .menuCard1{
