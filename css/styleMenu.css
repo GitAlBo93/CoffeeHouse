@@ -24,15 +24,39 @@
     max-width: 1360px;
     
 }
+
+.menuCards h3{
+    text-align: left;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
 .menuCard1{
+    
+    background-image: ;
     grid-area: A;
     border: 2px solid;
     border-radius: 40px;
+}
+
+
+
+.menuCard1Foto {
+    background-image: url("../img/coffee-1.jpg");
+    background-repeat: no-repeat;
+    width: 340px;
+    height: 340px;
+    border-radius: 40px;
+
 }
 .menuCard2{
     grid-area: B;
     border: 2px solid;
     border-radius: 40px;
+    background-image: url("../img/coffee-2.jpg");
+    background-repeat: no-repeat;
 }
 .menuCard3{
     grid-area: C;
