@@ -38,11 +38,21 @@
     font-weight: 600;
     line-height: 125%;
 }
+.menuCards p{
+    text-align: left;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
 
 .menuCard1{
     grid-area: A;
     border: 2px solid;
     border-radius: 40px;
+    display: flex;
+    flex-direction: column;
 }
 .menuCard1Foto {
     background-image: url("../img/coffee-1.jpg");
@@ -62,6 +72,8 @@
     grid-area: B;
     border: 2px solid;
     border-radius: 40px;
+    display: flex;
+    flex-direction: column;
 }
 .menuCard2Foto {
     background-image: url("../img/coffee-2.jpg");
@@ -81,6 +93,8 @@
     grid-area: C;
     border: 2px solid;
     border-radius: 40px;
+    display: flex;
+    flex-direction: column;
 }
 .menuCard3Foto {
     background-image: url("../img/coffee-3.jpg");
@@ -100,6 +114,8 @@
     grid-area: D;
     border: 2px solid;
     border-radius: 40px;
+    display: flex;
+    flex-direction: column;
 }
 .menuCard4Foto {
     background-image: url("../img/coffee-4.jpg");
