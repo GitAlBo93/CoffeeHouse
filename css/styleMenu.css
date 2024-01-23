@@ -1,3 +1,9 @@
+.menuContainer{
+    max-width: 1360px;
+    padding: 0px 40px;
+    justify-content: center;
+    align-self: stretch;
+}
 .menuDescription{
     text-align: center;
 }
@@ -19,9 +25,8 @@
     "A B C D"
     "E F G H";
     gap: 40px;
-    max-width: 1440px;
     text-align: left;
-    max-width: 1360px;
+    justify-content: center;
     
 }
 
