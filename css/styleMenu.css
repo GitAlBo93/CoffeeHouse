@@ -33,58 +33,155 @@
     font-weight: 600;
     line-height: 125%;
 }
+
 .menuCard1{
-    
-    background-image: ;
     grid-area: A;
     border: 2px solid;
     border-radius: 40px;
 }
-
-
-
 .menuCard1Foto {
     background-image: url("../img/coffee-1.jpg");
     background-repeat: no-repeat;
+    background-size: 110%;
     width: 340px;
     height: 340px;
     border-radius: 40px;
-
+    transition: 1s;
 }
+.menuCard1:hover .menuCard1Foto{
+    background-size: 100%;
+    transition: all 1s;
+}
+
 .menuCard2{
     grid-area: B;
     border: 2px solid;
     border-radius: 40px;
+}
+.menuCard2Foto {
     background-image: url("../img/coffee-2.jpg");
     background-repeat: no-repeat;
+    background-size: 110%;
+    width: 340px;
+    height: 340px;
+    border-radius: 40px;
+    transition: 1s;
 }
+.menuCard2:hover .menuCard2Foto{
+    background-size: 100%;
+    transition: all 1s;
+}
+
 .menuCard3{
     grid-area: C;
     border: 2px solid;
     border-radius: 40px;
 }
+.menuCard3Foto {
+    background-image: url("../img/coffee-3.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    width: 340px;
+    height: 340px;
+    border-radius: 40px;
+    transition: 1s;
+}
+.menuCard3:hover .menuCard3Foto{
+    background-size: 100%;
+    transition: all 1s;
+}
+
 .menuCard4{
     grid-area: D;
     border: 2px solid;
     border-radius: 40px;
 }
+.menuCard4Foto {
+    background-image: url("../img/coffee-4.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    width: 340px;
+    height: 340px;
+    border-radius: 40px;
+    transition: 1s;
+}
+.menuCard4:hover .menuCard4Foto{
+    background-size: 100%;
+    transition: all 1s;
+}
+
 .menuCard5{
     grid-area: E;
     border: 2px solid;
     border-radius: 40px;
 }
+.menuCard5Foto{
+    background-image: url("../img/coffee-5.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    width: 340px;
+    height: 340px;
+    border-radius: 40px;
+    transition: all 1s;
+}
+.menuCard5:hover .menuCard5Foto{
+    background-size: 100%;
+    transition: all 1s;
+}
+
 .menuCard6{
     grid-area: F;
     border: 2px solid;
     border-radius: 40px;
 }
+.menuCard6Foto{
+    background-image: url("../img/coffee-6.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    width: 340px;
+    height: 340px;
+    border-radius: 40px;
+    transition: all 1s;
+}
+.menuCard6:hover .menuCard6Foto{
+    background-size: 100%;
+    transition: all 1s;
+}
+
 .menuCard7{
     grid-area: G;
     border: 2px solid;
     border-radius: 40px;
 }
+.menuCard7Foto{
+    background-image: url("../img/coffee-7.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    width: 340px;
+    height: 340px;
+    border-radius: 40px;
+    transition: all 1s;
+}
+.menuCard7:hover .menuCard7Foto{
+    background-size: 100%;
+    transition: all 1s;
+}
+
 .menuCard8{
     grid-area: H;
     border: 2px solid;
     border-radius: 40px;
+}
+.menuCard8Foto{
+    background-image: url("../img/coffee-8.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    width: 340px;
+    height: 340px;
+    border-radius: 40px;
+    transition: all 1s;
+}
+.menuCard8:hover .menuCard8Foto{
+    background-size: 100%;
+    transition: all 1s;
 }

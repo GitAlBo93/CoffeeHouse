@@ -434,6 +434,7 @@ h3{
 }
 
 .CI-link a{
+    display: inline;
     color: #E1D4C9;
     position: relative;
     text-decoration: none;
@@ -441,6 +442,7 @@ h3{
 
 .text-link{
     padding-left: 9px;
+    
 }
 
 .CI-link P{
