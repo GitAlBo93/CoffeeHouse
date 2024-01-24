@@ -114,7 +114,7 @@ h3{
     color: var(--Text-Dark, #403F3D);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
@@ -150,7 +150,7 @@ h3{
     color: var(--Text-Dark, #403F3D);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%;
@@ -414,6 +414,7 @@ h3{
     max-width: 1360px;
     gap: 100px;
     padding: 100px;
+    margin-top: 80px;
 }
 
 .contacts-info{
