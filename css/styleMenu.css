@@ -134,8 +134,23 @@ font-feature-settings: 'clig' off, 'liga' off;
     transition: all 1s;
 }
 .menuCardSpecification{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 20px;
+    /* max-height: 200px; */
+    
 }
+ .menuCardTitle{
+    align-self: flex-start;
+}
+.menuCardPrice{
+    align-self: flex-end;
+}
+/* .menuCard1Price{
+    position: absolute;
+    bottom: 0px;
+} */
 
 .menuCard2{
     grid-area: B;
@@ -261,6 +276,7 @@ font-feature-settings: 'clig' off, 'liga' off;
     grid-area: H;
     border: 2px solid #C1B6AD;
     border-radius: 40px;
+    position: relative;
 }
 .menuCard8Foto{
     background-image: url("../img/coffee-8.jpg");
@@ -274,4 +290,8 @@ font-feature-settings: 'clig' off, 'liga' off;
 .menuCard8:hover .menuCard8Foto{
     background-size: 100%;
     transition: all 1s;
+}
+.menuCard8Price{
+    position: absolute;
+    bottom: 0;
 }
