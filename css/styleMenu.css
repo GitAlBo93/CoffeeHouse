@@ -78,10 +78,11 @@ font-feature-settings: 'clig' off, 'liga' off;
     border: 1px solid #C1B6AD;
     border-radius: 100px;
     gap: 8px;
-    padding: 8px 16px 8px 8px;
+    padding: 8px;
     background: #C1B6AD;
     transition: all 1s;
 }
+
 .menuCards{
     display: grid;
     grid-template-areas: 
@@ -101,6 +102,7 @@ font-feature-settings: 'clig' off, 'liga' off;
     font-weight: 600;
     line-height: 125%;
 }
+
 .menuCards p{
     text-align: left;
     font-family: Inter;
@@ -154,17 +156,6 @@ font-feature-settings: 'clig' off, 'liga' off;
     margin: 0px;
     cursor: default; 
 }
- /* .menuCardTitle{
-    align-self: flex-start;
-
-} */
-/* .menuCardPrice{
-    align-self: flex-end;
-} */
-/* .menuCard1Price{
-    position: absolute;
-    bottom: 0px;
-} */
 
 .menuCard2{
     grid-area: B;
@@ -312,4 +303,8 @@ font-feature-settings: 'clig' off, 'liga' off;
 .menuCard8:hover .menuCard8Foto{
     background-size: 100%;
     transition: all 1s;
+}
+
+.menuContainerButtonUpdate{
+    display: none;
 }

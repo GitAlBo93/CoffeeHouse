@@ -106,7 +106,9 @@ h3{
     display: flex;
     margin: 40px;
 }
-
+.headerMenuButton {
+    display: none;
+}
 .header-menu{
     display: flex;
     flex-direction: row;
