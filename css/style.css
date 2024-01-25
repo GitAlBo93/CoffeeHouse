@@ -3,6 +3,9 @@ body{
     background-color: #E1D4C9;
     margin: auto;
 }
+.logo a{
+    cursor: default;
+}
 
 h1{
     font-family: Inter;
@@ -30,6 +33,7 @@ h2{
 } */
 .ContactOffer h2{
     color: #E1D4C9;
+    margin: 0px;
 }
 
 .h2_accent{
@@ -100,6 +104,7 @@ h3{
 .header{
     flex-direction: column;
     display: flex;
+    margin: 40px;
 }
 
 .header-menu{

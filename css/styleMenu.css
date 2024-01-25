@@ -151,7 +151,8 @@ font-feature-settings: 'clig' off, 'liga' off;
 }
 
 .menuCardSpecification h3,p{
-    margin: 0px;  
+    margin: 0px;
+    cursor: default; 
 }
  /* .menuCardTitle{
     align-self: flex-start;

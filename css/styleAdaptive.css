@@ -1,0 +1,22 @@
+@media (max-width: 768px){
+    .menuCards{
+        display: grid;
+        grid-template-areas: 
+        "A B"
+        "C D";
+        gap: 40px;
+        text-align: left;
+        justify-content: center;
+    }
+    .menuCardSpecification h3,p{
+        color: blue;
+    }
+}
+
+@media (max-width: 768px) {
+    .menuCards h3{
+
+        font-size: 64px;
+
+    }
+  }
