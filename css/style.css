@@ -118,7 +118,7 @@ h3{
     /* border: 3px solid black; */
 }
 
-.nav{
+.headerNav{
     display: flex;
     flex-direction: row;
     color: var(--Text-Dark, #403F3D);
@@ -131,7 +131,8 @@ h3{
     gap: 20px;
 }
 
-.nav a{
+
+.headerNav a{
     position: relative;
     color: #403F3D;
     text-decoration: none;

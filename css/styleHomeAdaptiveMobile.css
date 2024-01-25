@@ -1,0 +1,21 @@
+@media (max-width: 380px){
+    .headerMenuButton {
+        display: initial;
+    }
+    .menuContainer{
+        padding: 0px;
+    }
+    .menuCards{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+        justify-content: center;
+    }
+
+    .nav,
+    .coffee-menu {
+        display: none;
+    }
+    
+}

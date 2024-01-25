@@ -21,9 +21,22 @@
         display: none;
     }
 
-    .nav,
-    .coffee-menu {
+    .coffee-menu,
+    .headerNav {
         display: none;
+    }
+    .btn-menu{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .btn-menu img{
+        opacity: 1;
+    }
+    .btnMenuNav {
+        position: relative;
+        color: #403F3D;
+        text-decoration: none;
     }
 
     .menuCarousel p{
@@ -63,5 +76,11 @@
     }
     .hero h1{
         margin: 0%;
+    }
+    .favorite-coffee h2{
+        text-align: center;
+    }
+    .slider_Fcoffee {
+        width: 768px;
     }
 }
