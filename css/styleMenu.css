@@ -96,7 +96,7 @@ font-feature-settings: 'clig' off, 'liga' off;
 .menuCards h3{
     text-align: left;
     font-family: Inter;
-    font-size: 30px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 125%;
@@ -104,30 +104,36 @@ font-feature-settings: 'clig' off, 'liga' off;
 .menuCards p{
     text-align: left;
     font-family: Inter;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
     color: #403F3D;
 }
+.menuCardSize{
+    max-height: 506px;
+}
 
 .menuCard1{
-    /* height: 506px;
-    width: 310px; */
+    /* height: 506px;*/
+    width: 310px; 
     grid-area: A;
     border: 2px solid #C1B6AD;
     border-radius: 40px;
     display: flex;
     flex-direction: column;
+    
 }
 .menuCard1Foto {
     background-image: url("../img/coffee-1.jpg");
     background-repeat: no-repeat;
     background-size: 110%;
-    width: 340px;
-    height: 340px;
+    width: 310px;
+    height: 310px;
     border-radius: 40px;
     transition: 1s;
+    overflow: hidden;
+    min-height: 310px;
 }
 .menuCard1:hover .menuCard1Foto{
     background-size: 100%;
@@ -138,15 +144,22 @@ font-feature-settings: 'clig' off, 'liga' off;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    /* max-height: 200px; */
+    gap: 12px;
+    margin: 0px; 
+    min-height: 150px;
     
 }
- .menuCardTitle{
+
+.menuCardSpecification h3,p{
+    margin: 0px;  
+}
+ /* .menuCardTitle{
     align-self: flex-start;
-}
-.menuCardPrice{
+
+} */
+/* .menuCardPrice{
     align-self: flex-end;
-}
+} */
 /* .menuCard1Price{
     position: absolute;
     bottom: 0px;
@@ -158,13 +171,15 @@ font-feature-settings: 'clig' off, 'liga' off;
     border-radius: 40px;
     display: flex;
     flex-direction: column;
+    width: 310px;
+    max-height: 506px;
 }
 .menuCard2Foto {
     background-image: url("../img/coffee-2.jpg");
     background-repeat: no-repeat;
     background-size: 110%;
-    width: 340px;
-    height: 340px;
+    width: 310px;
+    min-height: 310px;
     border-radius: 40px;
     transition: 1s;
 }
@@ -179,13 +194,14 @@ font-feature-settings: 'clig' off, 'liga' off;
     border-radius: 40px;
     display: flex;
     flex-direction: column;
+    width: 310px;
 }
 .menuCard3Foto {
     background-image: url("../img/coffee-3.jpg");
     background-repeat: no-repeat;
     background-size: 110%;
-    width: 340px;
-    height: 340px;
+    width: 310px;
+    min-height: 310px;
     border-radius: 40px;
     transition: 1s;
 }
@@ -200,13 +216,14 @@ font-feature-settings: 'clig' off, 'liga' off;
     border-radius: 40px;
     display: flex;
     flex-direction: column;
+    width: 310px;
 }
 .menuCard4Foto {
     background-image: url("../img/coffee-4.jpg");
     background-repeat: no-repeat;
     background-size: 110%;
-    width: 340px;
-    height: 340px;
+    width: 310px;
+    min-height: 310px;
     border-radius: 40px;
     transition: 1s;
 }
@@ -219,13 +236,14 @@ font-feature-settings: 'clig' off, 'liga' off;
     grid-area: E;
     border: 2px solid #C1B6AD;
     border-radius: 40px;
+    width: 310px;
 }
 .menuCard5Foto{
     background-image: url("../img/coffee-5.jpg");
     background-repeat: no-repeat;
     background-size: 110%;
-    width: 340px;
-    height: 340px;
+    width: 310px;
+    min-height: 310px;
     border-radius: 40px;
     transition: all 1s;
 }
@@ -238,13 +256,14 @@ font-feature-settings: 'clig' off, 'liga' off;
     grid-area: F;
     border: 2px solid #C1B6AD;
     border-radius: 40px;
+    width: 310px;
 }
 .menuCard6Foto{
     background-image: url("../img/coffee-6.jpg");
     background-repeat: no-repeat;
     background-size: 110%;
-    width: 340px;
-    height: 340px;
+    width: 310px;
+    min-height: 310px;
     border-radius: 40px;
     transition: all 1s;
 }
@@ -257,13 +276,14 @@ font-feature-settings: 'clig' off, 'liga' off;
     grid-area: G;
     border: 2px solid #C1B6AD;
     border-radius: 40px;
+    width: 310px;
 }
 .menuCard7Foto{
     background-image: url("../img/coffee-7.jpg");
     background-repeat: no-repeat;
     background-size: 110%;
-    width: 340px;
-    height: 340px;
+    width: 310px;
+    min-height: 310px;
     border-radius: 40px;
     transition: all 1s;
 }
@@ -277,21 +297,18 @@ font-feature-settings: 'clig' off, 'liga' off;
     border: 2px solid #C1B6AD;
     border-radius: 40px;
     position: relative;
+    width: 310px;
 }
 .menuCard8Foto{
     background-image: url("../img/coffee-8.jpg");
     background-repeat: no-repeat;
     background-size: 110%;
-    width: 340px;
-    height: 340px;
+    width: 310px;
+    min-height: 310px;
     border-radius: 40px;
     transition: all 1s;
 }
 .menuCard8:hover .menuCard8Foto{
     background-size: 100%;
     transition: all 1s;
-}
-.menuCard8Price{
-    position: absolute;
-    bottom: 0;
 }
