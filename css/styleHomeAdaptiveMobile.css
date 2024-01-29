@@ -1,4 +1,10 @@
 @media (max-width: 380px){
+    body{
+        margin: 0px;
+    }
+    .header {
+        margin: 16px;
+    }
     .headerMenuButton {
         display: initial;
     }
@@ -17,5 +23,39 @@
     .coffee-menu {
         display: none;
     }
-    
+
+    .hero{
+        padding: 60px 16px;
+        background-size: 400%;
+    }
+    .hero h1{
+        font-size: 42px;
+    }
+    .Enjoy_big{
+        font-size: 42px;
+    }
+
+    .favorite-coffee h2{
+        font-size: 32px;
+    }
+    .favorite-coffee span{
+        font-size: 32px;
+    }
+    .slider_Fcoffee{
+        width: 348px;
+        place-content: center;
+    }
+    .About h2{
+        font-size: 32px;
+        padding: 16px;
+    }
+    .About span{
+        font-size: 32px;
+    }
+    .AI_img1{
+        width: 726px;
+        height: 726px;
+        flex-shrink: 0;
+
+    }
 }
