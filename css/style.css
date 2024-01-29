@@ -66,6 +66,7 @@ h3{
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    margin: 40px 0;
 }
 
 .link_text{
@@ -359,7 +360,7 @@ h3{
 .BtnOffer{
     display: flex;
     flex-direction: row;   
-    gap: 20px;
+    gap: 40px;
 }
 
 .BtnOffer p{

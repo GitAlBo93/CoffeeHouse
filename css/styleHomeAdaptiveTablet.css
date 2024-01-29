@@ -54,6 +54,7 @@
     .Contacts{
         flex-direction: column;
         padding: 100px 60px;
+        margin: 40px;
     }
     .ContactOffer{
         display: flex;
@@ -82,5 +83,29 @@
     }
     .slider_Fcoffee {
         width: 768px;
+    }
+    .slider_Fcoffee img{
+        margin: 0 20px;
+    }
+    .About h2{
+        padding: 40px;
+    }
+    .About_img{
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+    }
+    .AI_img2,
+    .AI_img3 {
+        display: none;
+    }
+    .AI_img1,
+    .AI_img4 {
+        pointer-events: none;
+    }
+    .Mobile-app{
+        flex-direction: column-reverse;
+        padding: 40px;
+        gap: 100px;
     }
 }
