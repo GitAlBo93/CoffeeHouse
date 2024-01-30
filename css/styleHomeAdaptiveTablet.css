@@ -1,6 +1,28 @@
 @media (max-width: 768px){
+    body.noscroll{
+        overflow: hidden;
+    }
     .headerMenuButton {
         display: initial;
+    }
+    .headerMenuButton.active {
+        opacity: 0;
+    }
+    .headerMenuMobile{
+        position: fixed;
+        top: 75px;
+        right: -101%;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        transition: all ease 1s;
+    }
+    .headerMenuMobile.open {
+        right: 0%;
+        transition: all ease 1s;
     }
     .menuContainer{
         padding: 0px;
