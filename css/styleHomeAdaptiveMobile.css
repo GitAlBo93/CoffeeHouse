@@ -44,6 +44,11 @@
     .slider_Fcoffee{
         width: 348px;
         place-content: center;
+		
+    }
+	.slider_Fcoffee img{
+       
+		/*display: none;*/
     }
     .About h2{
         font-size: 32px;
@@ -52,10 +57,41 @@
     .About span{
         font-size: 32px;
     }
-    .AI_img1{
-        width: 726px;
-        height: 726px;
-        flex-shrink: 0;
-
+	.About_img{
+		padding:16px;
+	}
+    .AI_img1,
+	.AI_img4 {
+        background-size: cover;
+		background-position-x: center;
+        /*height: 726px;
+        flex-shrink: 0;*/
     }
+	.offer{
+		width: 348px;
+	}
+	.offer h2{
+		font-size: 32px;
+	}
+	.offer span{
+		font-size: 32px;
+	}
+	.BtnOffer{
+		flex-direction: column;
+		gap: 20px;
+	}
+	.Mobile-app {
+		gap: 20px;
+	}
+	.Contacts {
+		margin: 20px;
+		padding: 80px 20px;
+		gap: 20px;
+	}
+	.ContactOffer h2{
+		font-size: 32px;
+	}
+	.ContactOffer span{
+		font-size: 32px;
+	}
 }

@@ -1,9 +1,18 @@
 @media (max-width: 380px){
+	.header{
+		margin: 20px;
+	}
+	.menuDescription h2,
+	.menuDescription span{
+		font-size: 32px;
+	}
+	
     .headerMenuButton {
         display: initial;
     }
     .menuContainer{
         padding: 0px;
+		gap: 20px;
     }
     .menuCards{
         display: flex;
@@ -11,11 +20,28 @@
         gap: 20px;
         text-align: left;
         justify-content: center;
+		align-items: center;
     }
-
+	.menuCarousel {
+		gap: 8px;
+		}
+	.menuCarouselButton{
+		height: auto;
+	}
     .nav,
     .coffee-menu {
         display: none;
     }
+	.Contacts {
+		margin: 20px 0;
+		padding: 80px 20px;
+		gap: 20px;
+	}
+	.ContactOffer h2{
+		font-size: 32px;
+	}
+	.ContactOffer span{
+		font-size: 32px;
+	}
     
 }
