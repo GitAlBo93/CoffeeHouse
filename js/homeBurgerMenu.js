@@ -1,22 +1,25 @@
 const MenuButton = document.querySelector("#headerMenuButton");
 const MenuMobile = document.querySelector("#headerMenuMobile");
-const body = document.body;
 const MenuButtonClose = document.querySelector("#headerMenuBottonClose");
+const body = document.body;
+
 
 function functionClickButton() {
   MenuMobile.classList.toggle("open");
   body.classList.toggle("noscroll");
-  console.log("ClickBotton_noScroll_open");
+  console.log("ClickBottonOpen");
 }
 
-function functionClickButtonMenuClose(){
-  MenuMobile.classList.remove("open");
-  body.classList.remove("noscroll");
-}
+
 
 MenuButton.addEventListener('click',functionClickButton);
 MenuButtonClose.addEventListener('click',functionClickButtonMenuClose);
 
+function functionClickButtonMenuClose(){
+  MenuMobile.classList.remove("open");
+  body.classList.remove("noscroll");
+  console.log("CloseButtonMenu");
+}
 
 // //const hamb = document.querySelector("#hamb");
 // //const popup = document.querySelector("#popup");

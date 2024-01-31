@@ -132,8 +132,27 @@ h3{
     gap: 20px;
 }
 .headerMenuMobile {
-    display: none;
-}
+    position: fixed;
+    top: 100px;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #E1D4C9;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    transition: all ease 1s;
+    color: var(--Text-Dark, #403F3D);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    gap: 20px;
+    text-align: center;
+    padding-top: 20%;
+} 
 
 
 .headerNav a{
