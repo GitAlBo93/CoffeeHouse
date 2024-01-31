@@ -2,10 +2,10 @@
     body.noscroll{
         overflow: hidden;
     }
-    .headerMenuButton {
+    #headerMenuButton {
         display: initial;
     }
-    .headerMenuButton.active {
+    #headerMenuButton.active {
         opacity: 0;
     }
     .headerMenuMobile{
@@ -21,6 +21,7 @@
         transition: all ease 1s;
     }
     .headerMenuMobile.open {
+        display: initial;
         right: 0%;
         transition: all ease 1s;
     }

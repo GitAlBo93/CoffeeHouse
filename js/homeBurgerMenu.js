@@ -1,5 +1,5 @@
-const MenuButton = document.querySelector(".headerMenuButton");
-const MenuMobile = document.querySelector(".headerMenuMobile");
+const MenuButton = document.querySelector("#headerMenuButton");
+const MenuMobile = document.querySelector("#headerMenuMobile");
 const body = document.body;
 
 
@@ -11,6 +11,8 @@ const body = document.body;
 
 // При клике на иконку hamb вызываем ф-ию hambHandler
 MenuButton.addEventListener("click", hambHandler);
+
+
 
 // Выполняем действия при клике ..
 function hambHandler(e) {
