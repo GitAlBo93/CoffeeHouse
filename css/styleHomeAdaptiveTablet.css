@@ -8,7 +8,8 @@
     #headerMenuButton.active {
         opacity: 0;
     }
-    #headerMenuMobile{
+    #headerMenuMobile
+    {
         right: -100%;
         transition: all ease 1s;
     }
@@ -17,7 +18,11 @@
         right: 0%;
         transition: all ease 1s;
     }
-
+    #headerMenuBottonClose.open{
+        opacity: 0.9;
+        right: 0%;
+        transition: all ease 1s;
+    }
     .menuContainer{
         padding: 0px;
     }
