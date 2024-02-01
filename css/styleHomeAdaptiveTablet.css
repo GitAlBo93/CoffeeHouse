@@ -2,12 +2,64 @@
     body.noscroll{
         overflow: hidden;
     }
-    #headerMenuButton {
-        display: initial;
+    /* #headerMenuButton {
+        display: block;
+        border-radius: 100px;
+        border: 2px solid #403F3D;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+        position: relative;
+        z-index: 100;
     }
+    #headerMenuButton span{
+        position: absolute;
+        top: 50%;
+        width: 16px;
+        height: 2px;
+        background-color: #403F3D;
+        gap: 8px;
+    }
+    #headerMenuButton span:first-child {
+        top: 0;
+      }
+    #headerMenuButton span:last-child {
+        top: auto;
+        bottom: 0;
+      }
+    
     #headerMenuButton.active {
         opacity: 0;
-    }
+    } */
+    #headerMenuButton {
+        display: block;
+        width: 44px;
+        height: 44px;
+        position: relative;
+        z-index: 5;
+        cursor: pointer;
+        border: 2px solid #403F3D;
+        border-radius: 100px;
+      }
+      #headerMenuButton span {
+        position: absolute;
+        /* top: calc(50% - 1px); */
+        left: 25%;
+        width: 50%;
+        height: 2px;
+        background-color: #403F3D;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+      }
+      #headerMenuButton span:first-child {
+        top: 35%;
+        /* left: 22%; */
+      }
+      #headerMenuButton span:last-child {
+        top: auto;
+        bottom: 35%;
+        /* left: 30%; */
+      }
     #headerMenuMobile
     {
         right: -100%;
@@ -18,7 +70,7 @@
         right: 0%;
         transition: all ease 1s;
     }
-    #headerMenuBottonClose.open{
+    #headerMenuButtonClose.open{
         opacity: 0.9;
         right: 0%;
         transition: all ease 1s;

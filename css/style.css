@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     max-width: 1440px;
     background-color: #E1D4C9;
@@ -109,6 +112,7 @@ h3{
 }
 #headerMenuButton {
     display: none;
+    
 }
 .header-menu{
     display: flex;
@@ -132,7 +136,7 @@ h3{
     gap: 20px;
 }
 .headerMenuMobile {
-            position: fixed;
+        position: fixed;
         top: 100px;
         right: -100%;
         width: 100%;
@@ -152,8 +156,9 @@ h3{
         gap: 20px;
         text-align: center;
         padding-top: 20%;
+        /* overflow-x: hidden; */
 } 
-#headerMenuBottonClose{
+#headerMenuButtonClose{
     background-color: #E1D4C9;
     border: none;
     color: var(--Text-Dark, #403F3D);

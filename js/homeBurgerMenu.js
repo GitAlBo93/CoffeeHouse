@@ -1,6 +1,6 @@
 const MenuButton = document.querySelector("#headerMenuButton");
 const MenuMobile = document.querySelector("#headerMenuMobile");
-const MenuButtonClose = document.querySelector("#headerMenuBottonClose");
+const MenuButtonClose = document.querySelector("#headerMenuButtonClose");
 const body = document.body;
 
 
