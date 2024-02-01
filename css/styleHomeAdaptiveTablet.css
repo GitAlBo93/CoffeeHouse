@@ -60,6 +60,20 @@
         bottom: 35%;
         /* left: 30%; */
       }
+      #headerMenuButton.active span {
+      
+        transform: scale(0);
+      }
+      #headerMenuButton.active span:first-child {
+       
+        transform: rotate(-45deg);
+        top: calc(50% - 1px);
+      }
+      #headerMenuButton.active span:last-child {
+        
+        transform: rotate(45deg);
+        bottom: calc(50% - 1px);
+      }
     #headerMenuMobile
     {
         right: -100%;

@@ -1,10 +1,18 @@
 const MenuButton = document.querySelector("#headerMenuButton");
 const MenuMobile = document.querySelector("#headerMenuMobile");
-const MenuButtonClose = document.querySelector("#headerMenuButtonClose");
+// const MenuButtonClose = document.querySelector("#headerMenuButtonClose");
+const ItemFcoffee = document.querySelector("#menuItemFcoffee");
+const ItemAbout = document.querySelector("#menuItemAbout");
+const ItemMobile = document.querySelector("#menuItemMobile");
+const ItemContacts = document.querySelector("#menuItemContacts");
 const body = document.body;
 
+// function selectItem(){
+//   if 
+// }
 
 function functionClickButton() {
+  MenuButton.classList.toggle("active");
   MenuMobile.classList.toggle("open");
   body.classList.toggle("noscroll");
   console.log("ClickBottonOpen");
@@ -13,9 +21,12 @@ function functionClickButton() {
 
 
 MenuButton.addEventListener('click',functionClickButton);
-MenuButtonClose.addEventListener('click',functionClickButtonMenuClose);
+MenuItem.addEventListener('click',functionClickButtonMenuClose);
+
+
 
 function functionClickButtonMenuClose(){
+  MenuButton.classList.remove("active");
   MenuMobile.classList.remove("open");
   body.classList.remove("noscroll");
   console.log("CloseButtonMenu");
