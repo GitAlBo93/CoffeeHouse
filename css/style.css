@@ -277,19 +277,46 @@ h3{
 
 .slider_Fcoffee{
     display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 1360px;
+    /* justify-content: space-between; */
+}
+.conteinerFCMenu{
+    display: flex;
     flex-direction: row;
     align-items: center;
-    width: 1360px;
+    width: 100%;
     justify-content: space-between;
+        & button{
+            background-color: #E1D4C9;
+            border: none;
+            cursor: pointer;
+        }
 }
 
+.ContFCMenuCarousel{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
 .slider_Fcoffee img{
     width: 60px;
     height: 60px;
 }
+
 #FCMenu2,
+#FCMenu3 {
+    display: none;
+}
+#FCMenu2{
+    position: absolute;
+    right: -200%;
+}
+
 #FCMenu3{
-display: none;
+    right: -300%;
+    position: absolute;
 }
 
 .FC_menu img{
@@ -310,7 +337,7 @@ display: none;
   }
 #FCLine_2,
 #FCLine_3{
-    background-color: #706d68;
+    background-color: #9d9992;
 }
 
 .f-span{
