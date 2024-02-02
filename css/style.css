@@ -287,10 +287,30 @@ h3{
     width: 60px;
     height: 60px;
 }
+#FCMenu2,
+#FCMenu3{
+display: none;
+}
 
 .FC_menu img{
     width: 480px;
     height: 480px;
+}
+.FCLine{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+        & span {
+        width: 40px;
+        height: 4px;
+        border-radius: 100px;
+        background-color: #403F3D;
+  }
+  }
+#FCLine_2,
+#FCLine_3{
+    background-color: #706d68;
 }
 
 .f-span{
