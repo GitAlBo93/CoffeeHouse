@@ -18,8 +18,21 @@ ButtonLeft.addEventListener('click',functionLeftClick);
 ButtonRight.addEventListener('click',functionRightClick);
 
 function functionLeftClick(){
-    position+=60;
-    ContFCM.style.right = position + '%';
+    position+=510;
+    if (position > 1020){
+        position=1020;
+    }
+    ContFCM.style.right = position + 'px';
+    console.log(ContFCM.style.right);
+}
+
+function functionRightClick(){
+    position-=510;
+    if (position < 0){
+        position=0;
+    }
+    ContFCM.style.right = position + 'px';
+    console.log(ContFCM.style.right);
 }
 
 // function functionLeftClick(){
