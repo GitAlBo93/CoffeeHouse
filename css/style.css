@@ -299,6 +299,7 @@ h3{
     display: flex;
     flex-direction: row;
     position: relative;
+    overflow: hidden;
 }
 .slider_Fcoffee img{
     width: 60px;
@@ -309,9 +310,16 @@ h3{
 #FCMenu3 {
     display: none;
 } */
+#FCMenu1{
+    position: relative;
+
+    right: 0%;
+    transition: all 1s ease;
+}
 #FCMenu2{
     position: absolute;
-    right: -200%;
+    right: -100%;
+    transition: all 1s ease;
 }
 #FCMenu2.active{
     /* position: absolute; */
@@ -320,8 +328,9 @@ h3{
 }
 
 #FCMenu3{
-    right: -300%;
+    right: -200%;
     position: absolute;
+    transition: all 1s ease;
 }
 
 .FC_menu img{
