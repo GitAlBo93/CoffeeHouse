@@ -278,9 +278,10 @@ h3{
 .slider_Fcoffee{
     display: flex;
     flex-direction: column;
+    max-width: 100%;
     /* align-items: center; */
-    width: 1360px;
-    /* justify-content: space-between; */
+    /* width: 1360px; */
+    justify-content: space-between;
 }
 .conteinerFCMenu{
     display: flex;
@@ -295,19 +296,21 @@ h3{
         }
 }
 .Carousel{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    position: relative;
+    position: relative; */
     overflow: hidden;
-    right: 0%;
+    /* right: 0%; */
 }
 .ContFCMenuCarousel{
     display: flex;
     flex-direction: row;
     position: relative;
     /* overflow: hidden; */
-    right: 0%;
+    /* right: 0%; */
     transition: all 1s ease;
+    /* border: 2px solid black; */
+    text-align: center;
 }
 .slider_Fcoffee img{
     width: 60px;

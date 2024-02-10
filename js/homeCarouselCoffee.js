@@ -7,7 +7,10 @@ const FCMenu3 = document.querySelector("#FCMenu3");
 const FCLine1 = document.querySelector(".FCLine_1");
 const FCLine2 = document.querySelector(".FCLine_2");
 const FCLine3 = document.querySelector(".FCLine_3");
+const imagesDiv = document.querySelectorAll ('.ContFCMenuCarousel div');
 let position=0;
+let counter = 0;
+let width;
 
 // let style = getComputedStyle(FCMenu1);
 // let position = style.right;
@@ -15,25 +18,62 @@ let position=0;
 
 
 ButtonLeft.addEventListener('click',functionLeftClick);
+// ButtonLeft.addEventListener('click',init);
 ButtonRight.addEventListener('click',functionRightClick);
 
-function functionLeftClick(){
-    position+=510;
-    if (position > 1020){
-        position=1020;
-    }
-    ContFCM.style.right = position + 'px';
-    console.log(ContFCM.style.right);
+function init(){
+    console.log('resize');
+    width = document.querySelector('.Carousel').offsetWidth;
+    console.log(width);
+    ContFCM.computedStyleMap.width = width*imagesDiv.length + 'px';
+    console.log(ContFCM.computedStyleMap.width);
+    imagesDiv.forEach(item=> {
+        item.style.width = width + 'px';
+        //item.style.height = 'auto'; подстраиваемая высота
+    });
+    rollSlider
 }
 
-function functionRightClick(){
-    position-=510;
-    if (position < 0){
-        position=0;
+window.addEventListener('resize', init);
+init();
+
+function functionLeftClick(){
+        counter++;
+        console.log(counter);
+        if (counter > 2){
+            counter=0;
+        }
+    rollSlider();
     }
-    ContFCM.style.right = position + 'px';
-    console.log(ContFCM.style.right);
-}
+
+    function functionRightClick(){
+        counter--;
+        console.log(counter);
+        if (counter < 0){
+            counter = imagesDiv.length - 4;
+        }
+    rollSlider();
+    }
+    function rollSlider() {
+        ContFCM.style.transform = 'translate(-'+counter * width +'px)';
+    }
+// function functionLeftClick(){
+//     position+=510;
+//     if (position > 1020){
+//         position=1020;
+//     }
+//     ContFCM.style.right = position + 'px';
+//     console.log(ContFCM.style.right);
+// }
+
+// function functionRightClick(){
+//     position-=510;
+//     if (position < 0){
+//         position=0;
+//     }
+//     ContFCM.style.right = position + 'px';
+//     console.log(ContFCM.style.right);
+// }
 
 // function functionLeftClick(){
     

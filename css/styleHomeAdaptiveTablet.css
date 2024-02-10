@@ -169,7 +169,8 @@
         text-align: center;
     }
     .slider_Fcoffee {
-        width: 768px;
+        max-width: 100%;
+        /* width: 768px; */
     }
     .slider_Fcoffee img{
         margin: 0 20px;
