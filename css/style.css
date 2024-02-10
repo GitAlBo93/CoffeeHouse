@@ -327,22 +327,24 @@ h3{
     transition: all 1s ease; */
     /* margin-left: 10px; */
 }
-/* #FCMenu2{
-    position: absolute;
+#FCMenu2{
+    /* position: absolute;
     right: -100%;
-    transition: all 1s ease;
-} */
+    transition: all 1s ease; */
+    display: none;
+}
 #FCMenu2.active{
     /* position: absolute; */
     /* right: -100%; */
     transition: all 1s ease;
 }
 
-/* #FCMenu3{
-    right: -200%;
+#FCMenu3{
+    /* right: -200%;
     position: absolute;
-    transition: all 1s ease;
-} */
+    transition: all 1s ease; */
+    display: none;
+}
 
 .FC_menu img{
     width: 480px;
@@ -351,7 +353,7 @@ h3{
 .FCLine{
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 20px;
     justify-content: center;
         & span {
         width: 40px;
