@@ -88,6 +88,10 @@ function functionRightClick(){
         
     }
 
+    setInterval(() => {
+        functionRightClick()
+    }, 4000);
+
     // const activSlider => (counter)  {
 
     // }
