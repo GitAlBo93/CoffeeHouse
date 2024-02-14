@@ -119,7 +119,7 @@ font-feature-settings: 'clig' off, 'liga' off;
     display: none;
 }
 
-.active {
+.activ {
     opacity: 1;
 }
 
@@ -335,5 +335,8 @@ font-feature-settings: 'clig' off, 'liga' off;
 }
 
 .menuContainerButtonUpdate{
+    display: none;
+}
+.headerMenuButton {
     display: none;
 }
