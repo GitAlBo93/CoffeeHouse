@@ -317,35 +317,6 @@ h3{
     height: 60px;
 }
 
-/* #FCMenu2,
-#FCMenu3 {
-    display: none;
-} */
-#FCMenu1{
-    /* position: relative;
-    right: 0%;
-    transition: all 1s ease; */
-    /* margin-left: 10px; */
-}
-#FCMenu2{
-    /* position: absolute;
-    right: -100%;
-    transition: all 1s ease; */
-    display: none;
-}
-#FCMenu2.active{
-    /* position: absolute; */
-    /* right: -100%; */
-    transition: all 1s ease;
-}
-
-#FCMenu3{
-    /* right: -200%;
-    position: absolute;
-    transition: all 1s ease; */
-    display: none;
-}
-
 .FC_menu img{
     width: 480px;
     height: 480px;
