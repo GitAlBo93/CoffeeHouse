@@ -340,10 +340,12 @@ h3{
 .FCLine_2,
 .FCLine_3{
     background-color: #9d9992;
+    transition: all ease 1.5s;
 }
 
 .active {
     background-color: #403F3D;
+    transition: all ease 1.5s;
 }
 
 .f-span{

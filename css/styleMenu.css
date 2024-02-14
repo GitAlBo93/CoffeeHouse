@@ -83,7 +83,9 @@ font-feature-settings: 'clig' off, 'liga' off;
     transition: all 1s;
 }
 
-.menuCards{
+.menuCardsCoffee,
+.menuCardsTea,
+.menuCardsDessert {
     display: grid;
     grid-template-areas: 
     "A B C D"
@@ -91,19 +93,46 @@ font-feature-settings: 'clig' off, 'liga' off;
     gap: 40px;
     text-align: left;
     justify-content: center;
+        & h3 {
+            text-align: left;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 125%;
+        }
     
+        & p {
+            text-align: left;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            color: #403F3D;
+        }
 }
 
-.menuCards h3{
+
+.menuCardsTea,
+.menuCardsDessert {
+    display: none;
+}
+
+.active {
+    opacity: 1;
+}
+
+/* .menuCards h3{
     text-align: left;
     font-family: Inter;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 125%;
-}
+} */
 
-.menuCards p{
+/* .menuCards p{
     text-align: left;
     font-family: Inter;
     font-size: 16px;
@@ -111,7 +140,7 @@ font-feature-settings: 'clig' off, 'liga' off;
     font-weight: 400;
     line-height: 150%;
     color: #403F3D;
-}
+} */
 .menuCardSize{
     max-height: 506px;
 }
