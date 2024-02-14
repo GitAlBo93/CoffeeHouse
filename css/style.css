@@ -252,6 +252,8 @@ h3{
     font-weight: 600;
     transform: translateX(10px);
     transition: all ease 0.5s;
+    /* text-decoration: none; */
+    color: #403F3D;
 }
 
 .btn-menu img{
@@ -330,12 +332,18 @@ h3{
         width: 40px;
         height: 4px;
         border-radius: 100px;
-        background-color: #403F3D;
+        /* background-color: #9d9992; */
   }
   }
-#FCLine_2,
-#FCLine_3{
+
+.FCLine_1,
+.FCLine_2,
+.FCLine_3{
     background-color: #9d9992;
+}
+
+.active {
+    background-color: #403F3D;
 }
 
 .f-span{

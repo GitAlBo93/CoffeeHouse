@@ -8,7 +8,7 @@ const FCLine1 = document.querySelector(".FCLine_1");
 const FCLine2 = document.querySelector(".FCLine_2");
 const FCLine3 = document.querySelector(".FCLine_3");
 const imagesDiv = document.querySelectorAll ('.ContFCMenuCarousel div');
-let position=0;
+let position = 0;
 let counter = 0;
 let width;
 
@@ -37,26 +37,60 @@ function init(){
 window.addEventListener('resize', init);
 init();
 
-function functionLeftClick(){
+function functionRightClick(){
         counter++;
         console.log(counter);
         if (counter > 2){
             counter=0;
         }
     rollSlider();
+    activeSlider();
     }
 
-    function functionRightClick(){
+    function functionLeftClick(){
         counter--;
         console.log(counter);
         if (counter < 0){
-            counter = imagesDiv.length - 4;
+            // counter = imagesDiv.length - 4;
+            counter=2;
+    //         if (counter = -1){
+    //     // FCLine1.classList.add ('.active');
+    //     FCLine2.classList.add("active");
+    // }
         }
+    
+    
     rollSlider();
+    
+    activeSlider();
     }
+
     function rollSlider() {
         ContFCM.style.transform = 'translate(-'+counter * width +'px)';
     }
+
+    function activeSlider() {
+        if (counter==0){
+            FCLine1.classList.add("active");
+            FCLine2.classList.remove("active");
+            FCLine3.classList.remove("active");
+        }
+        if (counter==1){
+            FCLine1.classList.remove("active");
+            FCLine2.classList.add("active");
+            FCLine3.classList.remove("active");
+        }
+        if (counter==2){
+            FCLine1.classList.remove("active");
+            FCLine2.classList.remove("active");
+            FCLine3.classList.add("active");
+        }
+        
+    }
+
+    // const activSlider => (counter)  {
+
+    // }
 // function functionLeftClick(){
 //     position+=510;
 //     if (position > 1020){
