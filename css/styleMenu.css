@@ -113,14 +113,14 @@ font-feature-settings: 'clig' off, 'liga' off;
         }
 }
 
-
+.menuCardsCoffee,
 .menuCardsTea,
 .menuCardsDessert {
     display: none;
 }
 
 .activ {
-    opacity: 1;
+    display: grid;
 }
 
 /* .menuCards h3{
@@ -156,9 +156,6 @@ font-feature-settings: 'clig' off, 'liga' off;
     
 }
 .menuCard1Foto {
-    background-image: url("../img/coffee-1.jpg");
-    background-repeat: no-repeat;
-    background-size: 110%;
     width: 310px;
     height: 310px;
     border-radius: 40px;
@@ -169,6 +166,12 @@ font-feature-settings: 'clig' off, 'liga' off;
 .menuCard1:hover .menuCard1Foto{
     background-size: 100%;
     transition: all 1s;
+}
+
+.ImgCoffee1{
+    background-image: url("../img/coffee-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
 }
 .menuCardSpecification{
     display: flex;
@@ -196,9 +199,7 @@ font-feature-settings: 'clig' off, 'liga' off;
     max-height: 506px;
 }
 .menuCard2Foto {
-    background-image: url("../img/coffee-2.jpg");
-    background-repeat: no-repeat;
-    background-size: 110%;
+
     width: 310px;
     min-height: 310px;
     border-radius: 40px;
@@ -207,6 +208,11 @@ font-feature-settings: 'clig' off, 'liga' off;
 .menuCard2:hover .menuCard2Foto{
     background-size: 100%;
     transition: all 1s;
+}
+.ImgCoffee2{
+        background-image: url("../img/coffee-2.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
 }
 
 .menuCard3{
@@ -218,9 +224,7 @@ font-feature-settings: 'clig' off, 'liga' off;
     width: 310px;
 }
 .menuCard3Foto {
-    background-image: url("../img/coffee-3.jpg");
-    background-repeat: no-repeat;
-    background-size: 110%;
+
     width: 310px;
     min-height: 310px;
     border-radius: 40px;
@@ -229,6 +233,12 @@ font-feature-settings: 'clig' off, 'liga' off;
 .menuCard3:hover .menuCard3Foto{
     background-size: 100%;
     transition: all 1s;
+}
+
+.ImgCoffee3{
+       background-image: url("../img/coffee-3.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%; 
 }
 
 .menuCard4{
@@ -240,9 +250,7 @@ font-feature-settings: 'clig' off, 'liga' off;
     width: 310px;
 }
 .menuCard4Foto {
-    background-image: url("../img/coffee-4.jpg");
-    background-repeat: no-repeat;
-    background-size: 110%;
+
     width: 310px;
     min-height: 310px;
     border-radius: 40px;
@@ -253,6 +261,12 @@ font-feature-settings: 'clig' off, 'liga' off;
     transition: all 1s;
 }
 
+.ImgCoffee4{
+    background-image: url("../img/coffee-4.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;    
+}
+
 .menuCard5{
     grid-area: E;
     border: 2px solid #C1B6AD;
@@ -260,9 +274,7 @@ font-feature-settings: 'clig' off, 'liga' off;
     width: 310px;
 }
 .menuCard5Foto{
-    background-image: url("../img/coffee-5.jpg");
-    background-repeat: no-repeat;
-    background-size: 110%;
+
     width: 310px;
     min-height: 310px;
     border-radius: 40px;
@@ -273,6 +285,12 @@ font-feature-settings: 'clig' off, 'liga' off;
     transition: all 1s;
 }
 
+.ImgCoffee5{
+    background-image: url("../img/coffee-5.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+}
+
 .menuCard6{
     grid-area: F;
     border: 2px solid #C1B6AD;
@@ -280,9 +298,7 @@ font-feature-settings: 'clig' off, 'liga' off;
     width: 310px;
 }
 .menuCard6Foto{
-    background-image: url("../img/coffee-6.jpg");
-    background-repeat: no-repeat;
-    background-size: 110%;
+
     width: 310px;
     min-height: 310px;
     border-radius: 40px;
@@ -293,6 +309,12 @@ font-feature-settings: 'clig' off, 'liga' off;
     transition: all 1s;
 }
 
+.ImgCoffee6{
+    background-image: url("../img/coffee-6.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+}
+
 .menuCard7{
     grid-area: G;
     border: 2px solid #C1B6AD;
@@ -300,9 +322,7 @@ font-feature-settings: 'clig' off, 'liga' off;
     width: 310px;
 }
 .menuCard7Foto{
-    background-image: url("../img/coffee-7.jpg");
-    background-repeat: no-repeat;
-    background-size: 110%;
+
     width: 310px;
     min-height: 310px;
     border-radius: 40px;
@@ -313,6 +333,12 @@ font-feature-settings: 'clig' off, 'liga' off;
     transition: all 1s;
 }
 
+.ImgCoffee7{
+    background-image: url("../img/coffee-7.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;    
+}
+
 .menuCard8{
     grid-area: H;
     border: 2px solid #C1B6AD;
@@ -321,9 +347,7 @@ font-feature-settings: 'clig' off, 'liga' off;
     width: 310px;
 }
 .menuCard8Foto{
-    background-image: url("../img/coffee-8.jpg");
-    background-repeat: no-repeat;
-    background-size: 110%;
+
     width: 310px;
     min-height: 310px;
     border-radius: 40px;
@@ -334,9 +358,77 @@ font-feature-settings: 'clig' off, 'liga' off;
     transition: all 1s;
 }
 
+.ImgCoffee8{
+    background-image: url("../img/coffee-8.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;    
+}
+
 .menuContainerButtonUpdate{
     display: none;
 }
 .headerMenuButton {
     display: none;
+}
+
+.ImgTea1{
+    background-image: url("../img/tea-1.png");
+    background-repeat: no-repeat;
+    background-size: 110%;     
+}
+.ImgTea2{
+    background-image: url("../img/tea-2.png");
+    background-repeat: no-repeat;
+    background-size: 110%;     
+}
+.ImgTea3{
+    background-image: url("../img/tea-3.png");
+    background-repeat: no-repeat;
+    background-size: 110%;     
+}
+.ImgTea4{
+    background-image: url("../img/tea-4.png");
+    background-repeat: no-repeat;
+    background-size: 110%;     
+}
+
+.ImgDessert1{
+    background-image: url("../img/dessert-1.png");
+    background-repeat: no-repeat;
+    background-size: 110%;     
+}
+.ImgDessert2{
+    background-image: url("../img/dessert-2.png");
+    background-repeat: no-repeat;
+    background-size: 110%;     
+}
+.ImgDessert3{
+    background-image: url("../img/dessert-3.png");
+    background-repeat: no-repeat;
+    background-size: 110%;     
+}
+.ImgDessert4{
+    background-image: url("../img/dessert-4.png");
+    background-repeat: no-repeat;
+    background-size: 110%;     
+}
+.ImgDessert5{
+    background-image: url("../img/dessert-5.png");
+    background-repeat: no-repeat;
+    background-size: 110%;     
+}
+.ImgDessert6{
+    background-image: url("../img/dessert-6.png");
+    background-repeat: no-repeat;
+    background-size: 110%;     
+}
+.ImgDessert7{
+    background-image: url("../img/dessert-7.png");
+    background-repeat: no-repeat;
+    background-size: 110%;     
+}
+.ImgDessert8{
+    background-image: url("../img/dessert-8.png");
+    background-repeat: no-repeat;
+    background-size: 110%;     
 }
