@@ -50,11 +50,12 @@
     .menuContainer{
         padding: 0px;
     }
-    .menuCardsCoffee,
+    /* .menuCardsCoffee,
     .menuCardsTea,
     .menuCardsDessert{
     display: none;
-    }
+    } */
+
     .activ{
         display: grid;
         grid-template-areas: 
@@ -63,6 +64,15 @@
         gap: 40px;
         text-align: left;
         justify-content: center;
+    }
+    .menuCardNoActiveMobile{
+        display: none;
+    }
+    .menuCard5,
+    .menuCard6,
+    .menuCard7,
+    .menuCard8 {
+        display: none;
     }
     .activeUpdate{
         display: grid;
@@ -73,13 +83,6 @@
         text-align: left;
         justify-content: center;
     }
-    .menuCard5,
-    .menuCard6,
-    .menuCard7,
-    .menuCard8 {
-        display: none;
-    }
-
     .nav,
     .coffee-menu {
         display: none;

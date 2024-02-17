@@ -82,13 +82,36 @@ font-feature-settings: 'clig' off, 'liga' off;
     background: #C1B6AD;
     transition: all 1s;
 }
-
-.menuCardsCoffee,
-.menuCardsTea,
-.menuCardsDessert {
+.menuCardActiveMobile,
+.menuCardNoActiveMobile{
     display: grid;
     grid-template-areas: 
-    "A B C D"
+    "A B C D";
+    gap: 40px;
+    text-align: left;
+    justify-content: center;
+        & h3 {
+            text-align: left;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 125%;
+        }
+    
+        & p {
+            text-align: left;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            color: #403F3D;
+        }   
+}
+/* .menuCardNoActiveMobile{
+    display: grid;
+    grid-template-areas: 
     "E F G H";
     gap: 40px;
     text-align: left;
@@ -110,7 +133,14 @@ font-feature-settings: 'clig' off, 'liga' off;
             font-weight: 400;
             line-height: 150%;
             color: #403F3D;
-        }
+        }  
+} */
+.menuCardsCoffee,
+.menuCardsTea,
+.menuCardsDessert {
+display: flex;
+flex-direction: column;
+gap: 40px;
 }
 
 .menuCardsCoffee,
@@ -268,7 +298,7 @@ font-feature-settings: 'clig' off, 'liga' off;
 }
 
 .menuCard5{
-    grid-area: E;
+    grid-area: A;
     border: 2px solid #C1B6AD;
     border-radius: 40px;
     width: 310px;
@@ -292,7 +322,7 @@ font-feature-settings: 'clig' off, 'liga' off;
 }
 
 .menuCard6{
-    grid-area: F;
+    grid-area: B;
     border: 2px solid #C1B6AD;
     border-radius: 40px;
     width: 310px;
@@ -316,7 +346,7 @@ font-feature-settings: 'clig' off, 'liga' off;
 }
 
 .menuCard7{
-    grid-area: G;
+    grid-area: C;
     border: 2px solid #C1B6AD;
     border-radius: 40px;
     width: 310px;
@@ -340,7 +370,7 @@ font-feature-settings: 'clig' off, 'liga' off;
 }
 
 .menuCard8{
-    grid-area: H;
+    grid-area: D;
     border: 2px solid #C1B6AD;
     border-radius: 40px;
     position: relative;
