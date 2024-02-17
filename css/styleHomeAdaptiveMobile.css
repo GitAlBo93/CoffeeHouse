@@ -46,10 +46,10 @@
         place-content: center;
 		
     }
-	.slider_Fcoffee img{
+	/* .slider_Fcoffee img{
        
-		/*display: none;*/
-    }
+		display: none;
+    } */
     .About h2{
         font-size: 32px;
         padding: 16px;

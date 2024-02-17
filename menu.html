@@ -9,12 +9,14 @@
             <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="css/style.css">
             <link rel="stylesheet" href="css/styleMenu.css">
-            <link rel="stylesheet" href="css/styleAdaptiveTablet.css">
-            <link rel="stylesheet" href="css/styleAdaptiveMobile.css">
+            <link rel="stylesheet" href="css/styleMenuAdaptiveTablet.css">
+            <link rel="stylesheet" href="css/styleMenuAdaptiveMobile.css">
+            <!-- <link rel="stylesheet" href="css/styleHomeAdaptiveTablet.css">
+            <link rel="stylesheet" href="css/styleHomeAdaptiveMobile.css"> -->
         </head>
              <body>
                 <div class="header">
-                        <div class="header-menu">
+                        <!-- <div class="header-menu">
                             <div class="logo">
                                 <a href="http://127.0.0.1:5500/home.html"><img src="img/logo.png" alt="Logo_png" width="100" height="60" title="Logo">
                                 </a>
@@ -32,7 +34,38 @@
                                 
                             </div>
                             <a href="" class="headerMenuButton"><img src="img/button-menu.png"></a>
+                        </div> -->
+
+                        <div class="header-menu">
+                            <div class="logo">
+                                <a href="http://127.0.0.1:5500/home.html"><img src="img/logo.png" alt="Logo_png" width="100" height="60" title="Logo">
+                                </a>
+                                
+                            </div>
+                            <div class="headerNav">
+                                <nav class="menu-item" id="menu-item"><a href="#nav_Fcoffee">Favorite Coffee</a></nav>
+                                <nav class="menu-item"><a href="#nav_about">About</a></nav>
+                                <nav class="menu-item"><a href="#nav_mobile">Mobile app</a></nav>
+                                <nav class="menu-item"><a href="#nav_contacts">Contact us</a></nav>
+                            </div>
+                            <div class="coffee-menu">
+                                <nav class="menu-item"><a href="http://127.0.0.1:5500/home.html">Menu
+                                <img src="img/coffee-cup.png" width="20" height="20"></a></nav>
+                                
+                            </div>
+                            <div id="headerMenuButton">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="headerMenuMobile" id="headerMenuMobile">
+                                <nav class="menu-item" id="menuItemFcoffee"><a href="#nav_Fcoffee">Favorite Coffee</a></nav>
+                                <nav class="menu-item" id="menuItemAbout"><a href="#nav_about">About</a></nav>
+                                <nav class="menu-item" id="menuItemMobile"><a href="#nav_mobile">Mobile app</a></nav>
+                                <nav class="menu-item" id="menuItemContacts"><a href="#nav_contacts">Contact us</a></nav>
+                                <button class="menu-item" id="headerMenuButtonClose">Menu<img src="img/coffee-cup.png" width="40" height="40"></button>
+                            </div>
                         </div>
+                </div>
                         <div class="menuContainer">
                             <div class="menuDescription"><h2 id="nav_Fcoffee">Behind each of our cups hides an <span class="h2_accent">amazing surprise</span></h2></div>
                             <div class="menuCarousel">
@@ -40,7 +73,7 @@
                                 <button class="menuCarouselButton BtnMenuTea" href=""><img class="menuCarouselButtonImg" src="img/icon_menu_tea.png"><p>Tea</p></button>
                                 <button class="menuCarouselButton BtnMenuDessert" href=""><img class="menuCarouselButtonImg" src="img/icon_menu_dessert.png"><p>Dessert</p></button>
                             </div>
-                            <div class="menuCardsCoffee activ">
+                            <div id="menuCardCoffeeClass" class="menuCardsCoffee activ">
                                 <div class="menuCard1 menuCardSize">
                                     <div class="menuCard1Foto ImgCoffee1"></div>
                                     <div class="menuCard1specification menuCardSpecification">
@@ -106,7 +139,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="menuCardsTea">
+                            <div id="menuCardTeaClass" class="menuCardsTea">
                                 <div class="menuCard1 menuCardSize">
                                     <div class="menuCard1Foto ImgTea1"></div>
                                     <div class="menuCard1specification menuCardSpecification">
@@ -140,7 +173,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="menuCardsDessert">
+                            <div id="menuCardDessertClass" class="menuCardsDessert">
                                 <div class="menuCard1 menuCardSize">
                                     <div class="menuCard1Foto ImgDessert1"></div>
                                     <div class="menuCard1specification menuCardSpecification">
@@ -206,7 +239,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="menuContainerButtonUpdate"><img src="img/button-update-tablet.png"></div>
+                            <button class="menuContainerButtonUpdate"><img src="img/button-update-tablet.png"></button>
                         </div>
 
     <div class="Contacts">

@@ -1,36 +1,4 @@
 @media (max-width: 768px){
-    body.noscroll{
-        overflow: hidden;
-    }
-    /* #headerMenuButton {
-        display: block;
-        border-radius: 100px;
-        border: 2px solid #403F3D;
-        width: 44px;
-        height: 44px;
-        cursor: pointer;
-        position: relative;
-        z-index: 100;
-    }
-    #headerMenuButton span{
-        position: absolute;
-        top: 50%;
-        width: 16px;
-        height: 2px;
-        background-color: #403F3D;
-        gap: 8px;
-    }
-    #headerMenuButton span:first-child {
-        top: 0;
-      }
-    #headerMenuButton span:last-child {
-        top: auto;
-        bottom: 0;
-      }
-    
-    #headerMenuButton.active {
-        opacity: 0;
-    } */
     #headerMenuButton {
         display: block;
         width: 44px;
@@ -40,8 +8,8 @@
         cursor: pointer;
         border: 2px solid #403F3D;
         border-radius: 100px;
-      }
-      #headerMenuButton span {
+    }
+    #headerMenuButton span {
         position: absolute;
         /* top: calc(50% - 1px); */
         left: 25%;
@@ -74,29 +42,33 @@
         transform: rotate(45deg);
         bottom: calc(50% - 1px);
       }
-    #headerMenuMobile
-    {
-        right: -100%;
-        transition: all ease 1s;
-    }
-    #headerMenuMobile.open {
-        opacity: 0.9;
-        right: 0%;
-        transition: all ease 1s;
-    }
-    #headerMenuButtonClose.open{
-        opacity: 0.9;
-        right: 0%;
-        transition: all ease 1s;
-    }
+
+      .coffee-menu,
+      .headerNav {
+          display: none;
+      }
     .menuContainer{
         padding: 0px;
     }
-    .menuCards{
+    .menuCardsCoffee,
+    .menuCardsTea,
+    .menuCardsDessert{
+    display: none;
+    }
+    .activ{
         display: grid;
         grid-template-areas: 
         "A B"
         "C D";
+        gap: 40px;
+        text-align: left;
+        justify-content: center;
+    }
+    .activeUpdate{
+        display: grid;
+        grid-template-areas: 
+        "E F"
+        "G H";
         gap: 40px;
         text-align: left;
         justify-content: center;
@@ -108,22 +80,9 @@
         display: none;
     }
 
-    .coffee-menu,
-    .headerNav {
+    .nav,
+    .coffee-menu {
         display: none;
-    }
-    .btn-menu{
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-    .btn-menu img{
-        opacity: 1;
-    }
-    .btnMenuNav {
-        position: relative;
-        color: #403F3D;
-        text-decoration: none;
     }
 
     .menuCarousel p{
@@ -138,10 +97,13 @@
         width: 60px;
         height: 60px;
     }
+    .noneMenuUpdate{
+        display: none;
+    }
+
     .Contacts{
         flex-direction: column;
         padding: 100px 60px;
-        margin: 40px;
     }
     .ContactOffer{
         display: flex;
@@ -165,37 +127,4 @@
     .hero h1{
         margin: 0%;
     }
-    .favorite-coffee h2{
-        text-align: center;
-    }
-    .slider_Fcoffee {
-        max-width: 100%;
-        /* width: 768px; */
-    }
-    .slider_Fcoffee img{
-        margin: 0 20px;
-    }
-    .About h2{
-        padding: 40px;
-    }
-    .About_img{
-        display: flex;
-        flex-direction: column;
-        padding: 40px;
-    }
-    .AI_img2,
-    .AI_img3 {
-        display: none;
-    }
-    .AI_img1,
-    .AI_img4 {
-        pointer-events: none;
-    }
-    .Mobile-app{
-        flex-direction: column-reverse;
-        padding: 40px;
-        gap: 100px;
-    }
-
-    
 }
