@@ -10,7 +10,7 @@ const idCoffee = document.getElementById('menuCardCoffeeClass');
 const idTea = document.getElementById('menuCardTeaClass');
 const idDessert = document.getElementById('menuCardDessertClass');
 
-
+const menuCardsCoffee = document.querySelector(".menuCardsCoffee");
 
 
 
