@@ -1,4 +1,7 @@
 @media (max-width: 768px){
+    body.noscroll{
+        overflow: hidden;
+    }
     #headerMenuButton {
         display: block;
         width: 44px;
@@ -42,7 +45,21 @@
         transform: rotate(45deg);
         bottom: calc(50% - 1px);
       }
-
+      #headerMenuMobile
+      {
+          right: -100%;
+          transition: all ease 1s;
+      }
+      #headerMenuMobile.open {
+          opacity: 0.9;
+          right: 0%;
+          transition: all ease 1s;
+      }
+      #headerMenuButtonClose.open{
+          opacity: 0.9;
+          right: 0%;
+          transition: all ease 1s;
+      }
       .coffee-menu,
       .headerNav {
           display: none;

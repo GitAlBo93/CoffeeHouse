@@ -43,5 +43,26 @@
 	.ContactOffer span{
 		font-size: 32px;
 	}
-    
+	.activ{
+        display: grid;
+        grid-template-areas: 
+        "A"
+		"B"
+        "C"
+		"D";
+        gap: 40px;
+        text-align: left;
+        justify-content: center;
+    }
+	.activeUpdate{
+        display: grid;
+        grid-template-areas: 
+        "A"
+		"B"
+        "C"
+		"D";
+        gap: 40px;
+        text-align: left;
+        justify-content: center;
+    }
 }
