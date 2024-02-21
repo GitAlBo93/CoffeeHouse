@@ -55,6 +55,16 @@
     .menuCardsDessert{
     display: none;
     } */
+.menuActive{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+    .menuCardCoffeeNoActiveMobile,
+    .menuCardDessertNoActiveMobile{
+        display: none;
+    }
 
     .activ{
         display: grid;
@@ -65,24 +75,26 @@
         text-align: left;
         justify-content: center;
     }
-    .menuCardNoActiveMobile{
+    /* .menuCardNoActiveMobile{
         display: none;
-    }
-    .menuCard5,
+    } */
+    /* .menuCard5,
     .menuCard6,
     .menuCard7,
     .menuCard8 {
         display: none;
-    }
+    } */
+
     .activeUpdate{
         display: grid;
         grid-template-areas: 
-        "E F"
-        "G H";
+        "A B"
+        "C D";
         gap: 40px;
         text-align: left;
         justify-content: center;
     }
+    
     .nav,
     .coffee-menu {
         display: none;
@@ -129,5 +141,8 @@
     }
     .hero h1{
         margin: 0%;
+    }
+    .noActive{
+        display: none;
     }
 }

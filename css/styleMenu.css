@@ -82,8 +82,10 @@ font-feature-settings: 'clig' off, 'liga' off;
     background: #C1B6AD;
     transition: all 1s;
 }
-.menuCardActiveMobile,
-.menuCardNoActiveMobile{
+.menuCardCoffeeActiveMobile,
+.menuCardCoffeeNoActiveMobile,
+.menuCardDessertActiveMobile,
+.menuCardDessertNoActiveMobile{
     display: grid;
     grid-template-areas: 
     "A B C D";
@@ -143,14 +145,17 @@ flex-direction: column;
 gap: 40px;
 }
 
-.menuCardsCoffee,
-.menuCardsTea,
+/* .menuCardsCoffee, */
+/* .menuCardsTea,
 .menuCardsDessert {
     display: none;
-}
+} */
 
 .activ {
     display: grid;
+    grid-template-areas: 
+    "A B C D";
+    gap: 40px;
 }
 
 /* .menuCards h3{
@@ -461,4 +466,7 @@ gap: 40px;
     background-image: url("../img/dessert-8.png");
     background-repeat: no-repeat;
     background-size: 110%;     
+}
+.noActive{
+    display: none;
 }

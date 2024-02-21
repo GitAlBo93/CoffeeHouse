@@ -50,6 +50,16 @@
        
 		display: none;
     } */
+.FC_menu img{
+width: 320px;
+height: 320px;
+}
+
+#ButtonLeftCarousel,
+#ButtonRightCarousel {
+    display: none;
+}
+
     .About h2{
         font-size: 32px;
         padding: 16px;

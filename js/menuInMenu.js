@@ -10,11 +10,10 @@ const idCoffee = document.getElementById('menuCardCoffeeClass');
 const idTea = document.getElementById('menuCardTeaClass');
 const idDessert = document.getElementById('menuCardDessertClass');
 
-const menuCardsCoffee = document.querySelector(".menuCardsCoffee");
-
-
-
-
+const menuCardCoffeeActiveMobile = document.querySelector(".menuCardCoffeeActiveMobile");
+const menuCardCoffeeNoActiveMobile = document.querySelector(".menuCardCoffeeNoActiveMobile");
+const menuCardDessertActiveMobile = document.querySelector(".menuCardDessertActiveMobile");
+const menuCardDessertNoActiveMobile = document.querySelector(".menuCardDessertNoActiveMobile");
 
 BtnMenuCoffee.addEventListener('click', functionClickCoffee);
 BtnMenuTea.addEventListener('click', functionClickTea);
@@ -22,58 +21,62 @@ BtnMenuDessert.addEventListener('click', functionClickDessert);
 BtnUpdate.addEventListener('click', functionClickUpdate);
 
 function functionClickUpdate(){
-    const classCoffee = idCoffee.getAttribute('class');
-    const classTea = idTea.getAttribute('class');
-    const classDessert = idDessert.getAttribute('class');
-    // if (classCoffee.split(' ').indexOf('activ') !== -1) {
-        menuCardsCoffee.classList.toggle("activeUpdate");
-        menuCardsCoffee.classList.remove("activ");
-    //   }
-    // menuCardsCoffee.classList.toggle("activeUpdate");
-    // menuCardsDessert.classList.toggle("activeUpdate");
-    // 
-    // menuCardsDessert.classList.remove("activ");
-    console.log(classCoffee);
-    console.log(classTea);
-    console.log(classDessert);
+
+    if (idCoffee.classList.contains('menuActive')) {
+        menuCardCoffeeNoActiveMobile.classList.toggle("activ");
+        menuCardCoffeeNoActiveMobile.classList.remove("noActive");
+        menuCardCoffeeActiveMobile.classList.toggle("noActive");
+        menuCardCoffeeActiveMobile.classList.toggle("activ");
+      console.log('Элемент Coffee класс "menuActive"');
+    } 
+    if (idDessert.classList.contains('menuActive')) {
+        menuCardDessertNoActiveMobile.classList.toggle("activ");
+        menuCardDessertNoActiveMobile.classList.remove("noActive");
+        menuCardDessertActiveMobile.classList.toggle("noActive");
+        menuCardDessertActiveMobile.classList.toggle("activ");
+      console.log('Элемент Dessert класс "menuActive"');
+    } 
+
     console.log("ClickUpdate");
 }
 
 function functionClickCoffee() {
-    menuCardsCoffee.classList.add("activ");
+    menuCardsCoffee.classList.remove("noActive");
+    menuCardsCoffee.classList.add("menuActive");
     menuCardsTea.classList.remove("activ");
-    menuCardsDessert.classList.remove("activ");
-    // const classCoffee = idCoffee.getAttribute('class');
-    // const classTea = idTea.getAttribute('class');
-    // const classDessert = idDessert.getAttribute('class');
+    menuCardsTea.classList.add("noActive");
+    menuCardsDessert.classList.remove("menuActive");
+    menuCardsDessert.classList.add("noActive");
+
+    BtnUpdate.classList.remove("noActive");
+
     console.log("ClickCoffee");
-    // console.log(classCoffee);
-    // console.log(classTea);
-    // console.log(classDessert);
 }
 
+functionClickCoffee();
+
 function functionClickTea() {
-    menuCardsCoffee.classList.remove("activ");
+    menuCardsCoffee.classList.remove("menuActive");
+    menuCardsCoffee.classList.add("noActive");
+    menuCardsTea.classList.remove("noActive");
     menuCardsTea.classList.add("activ");
-    menuCardsDessert.classList.remove("activ");
+    menuCardsDessert.classList.remove("menuActive");
+    menuCardsDessert.classList.add("noActive");
+
+    BtnUpdate.classList.add("noActive");
+
     console.log("ClickTea");
-    // const classCoffee = idCoffee.getAttribute('class');
-    // const classTea = idTea.getAttribute('class');
-    // const classDessert = idDessert.getAttribute('class');
-    // console.log(classCoffee);
-    // console.log(classTea);
-    // console.log(classDessert);
 }
 
 function functionClickDessert() {
-    menuCardsCoffee.classList.remove("activ");
+    menuCardsCoffee.classList.remove("menuActive");
     menuCardsTea.classList.remove("activ");
-    menuCardsDessert.classList.add("activ");
+    menuCardsCoffee.classList.add("noActive");
+    menuCardsTea.classList.add("noActive");
+    menuCardsDessert.classList.remove("noActive");
+    menuCardsDessert.classList.add("menuActive");
+
+    BtnUpdate.classList.remove("noActive");
+
     console.log("ClickDessert");
-    // const classCoffee = idCoffee.getAttribute('class');
-    // const classTea = idTea.getAttribute('class');
-    // const classDessert = idDessert.getAttribute('class');
-    // console.log(classCoffee);
-    // console.log(classTea);
-    // console.log(classDessert);
 }
