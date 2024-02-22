@@ -1,0 +1,131 @@
+body{
+    max-width: 768px;
+    background-color: #E1D4C9;
+    margin: auto;
+}
+
+.conteiner{
+display: flex;
+flex-direction: row;
+gap: 10px;
+border: green 2px solid;
+padding: 20px;
+}
+
+.card-img{
+    width: 310px;
+    height: 310px;
+    background-image: url("../img/coffee-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 40px;
+    border: black 2px solid;
+}
+
+.card-description{
+    border: black 2px solid;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card-description-specification{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.card-description-specification-title{
+
+}
+
+.card-description-specification-definition{
+
+}
+
+.card-description-size{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.card-description-size-title{
+
+}
+
+.card-description-size-button{
+display: flex;
+flex-direction: row;
+gap: 20px;
+}
+
+.card-description-size-button-btn1,
+.card-description-size-button-btn2,
+.card-description-size-button-btn3{
+
+}
+
+.card-description-additives{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-description-additives-title{
+
+}
+
+.card-description-additives-button{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card-description-additives-button-btn1,
+.card-description-additives-button-btn2,
+.card-description-additives-button-btn3{
+
+}
+
+.card-description-price{
+display: flex;
+flex-direction: column;
+gap: 40px;
+}
+
+.card-description-price-noSpan{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    }
+
+.card-description-price-total{
+
+}
+
+.card-description-price-price{
+
+}
+
+.card-description-price span{
+width: 400px;
+height: 1px;
+background-color: #000;
+}
+
+.card-description-sale{
+display: flex;
+flex-direction: row;
+}
+
+.card-description-sale-img{
+
+}
+
+.card-description-sale-specification{
+
+}
+
+.card-description-btn{
+
+}
