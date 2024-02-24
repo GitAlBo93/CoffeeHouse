@@ -1,16 +1,18 @@
+async function responsed (){
+  const resp = await fetch('json/products.json')
+  return resp.json();
+}
 
- let responsed = 
- fetch('json/products.json')
-  .then(response => response.json())
-  .then(data => {
-    processData(data);
-        function processData(data) {
-            productsCard = data;
-            // console.log(productsCard); // данные должны быть доступны здесь
-            // дальнейшие действия с globalData
-        }// вызовем функцию processData с полученными данными
-  });
-let productsCard;
+async function go (){
+  let respjson = await responsed();
+   let card1 = respjson[4];
+  // let card2 = respjson[1];
+  // let card3 = respjson[2];
+  // let card4 = respjson[3];
+  // let card5 = respjson[4];
 
-// объявляем глобальную переменную 
-console.log(productsCard);
+  let price = card1.price;
+  document.getElementById("price").innerHTML = "$" + price;
+}
+
+go();

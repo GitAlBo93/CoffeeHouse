@@ -15,6 +15,8 @@ const menuCardCoffeeNoActiveMobile = document.querySelector(".menuCardCoffeeNoAc
 const menuCardDessertActiveMobile = document.querySelector(".menuCardDessertActiveMobile");
 const menuCardDessertNoActiveMobile = document.querySelector(".menuCardDessertNoActiveMobile");
 
+
+
 BtnMenuCoffee.addEventListener('click', functionClickCoffee);
 BtnMenuTea.addEventListener('click', functionClickTea);
 BtnMenuDessert.addEventListener('click', functionClickDessert);
@@ -49,8 +51,9 @@ function functionClickCoffee() {
     menuCardsDessert.classList.add("noActive");
 
     BtnUpdate.classList.remove("noActive");
-
+    
     console.log("ClickCoffee");
+    
 }
 
 functionClickCoffee();
@@ -64,8 +67,9 @@ function functionClickTea() {
     menuCardsDessert.classList.add("noActive");
 
     BtnUpdate.classList.add("noActive");
-
+    
     console.log("ClickTea");
+    
 }
 
 function functionClickDessert() {
@@ -77,6 +81,9 @@ function functionClickDessert() {
     menuCardsDessert.classList.add("menuActive");
 
     BtnUpdate.classList.remove("noActive");
-
+    
     console.log("ClickDessert");
+    
 }
+
+
