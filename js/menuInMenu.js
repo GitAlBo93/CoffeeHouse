@@ -93,13 +93,20 @@ function functionClickDessert() {
 }
 
 // Закрытие модального окна путем прямого получение id и прямого присвоения классов
-document.getElementById("modalBtnClose").addEventListener('click', function() {
-    document.getElementById("modal").classList.remove("open")
-})
+document.getElementById("modalBtnClose").addEventListener('click', clickCloseModal);
 
-document.getElementById("Card1Coffee").addEventListener('click', function() {
-    document.getElementById("modal").classList.add("open")
-})
+function clickCloseModal() {
+    document.getElementById("modal").classList.remove("open")
+}
+
+document.getElementById("Card1Coffee").addEventListener('click', clickOpenModal);
+
+let CardOpen; 
+
+function clickOpenModal() {
+    document.getElementById("modal").classList.add("open");
+    CardOpen = 4;
+}
 // modalCard.classList.add("open");
 
 
