@@ -16,7 +16,7 @@ const menuCardDessertActiveMobile = document.querySelector(".menuCardDessertActi
 const menuCardDessertNoActiveMobile = document.querySelector(".menuCardDessertNoActiveMobile");
 
 const modalCard = document.querySelector(".modal");
-
+const BtnModalClose = document.getElementById('#modalBtnClose');
 
 
 
@@ -75,7 +75,7 @@ function functionClickTea() {
     BtnUpdate.classList.add("noActive");
     
     console.log("ClickTea");
-    modalCard.classList.add("open");
+    
 }
 
 function functionClickDessert() {
@@ -91,5 +91,15 @@ function functionClickDessert() {
     console.log("ClickDessert");
     
 }
+
+// Закрытие модального окна путем прямого получение id и прямого присвоения классов
+document.getElementById("modalBtnClose").addEventListener('click', function() {
+    document.getElementById("modal").classList.remove("open")
+})
+
+document.getElementById("Card1Coffee").addEventListener('click', function() {
+    document.getElementById("modal").classList.add("open")
+})
+// modalCard.classList.add("open");
 
 
