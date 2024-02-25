@@ -1,4 +1,4 @@
-body{
+/* body{
     max-width: 768px;
     background-color: #E1D4C9;
     margin: auto;
@@ -10,6 +10,45 @@ flex-direction: row;
 gap: 10px;
 border: green 2px solid;
 padding: 20px;
+} */
+
+.modal{
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .8);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 1;
+    transition: all ease 1s;
+}
+
+.modal.open{
+    visibility: visible;
+    opacity: 1;
+    transition: all ease 1s;
+}
+
+.modalProductCard{
+    background-color: #E1D4C9;
+    max-width: 100vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+    transform: scale(0);
+    transition: all ease 1s;
+}
+
+.modal.open .modalProductCard{
+    transform: scale(1);
+    transition: all ease 0.5s;
 }
 
 .card-img{

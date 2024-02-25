@@ -15,6 +15,10 @@ const menuCardCoffeeNoActiveMobile = document.querySelector(".menuCardCoffeeNoAc
 const menuCardDessertActiveMobile = document.querySelector(".menuCardDessertActiveMobile");
 const menuCardDessertNoActiveMobile = document.querySelector(".menuCardDessertNoActiveMobile");
 
+const modalCard = document.querySelector(".modal");
+
+
+
 
 
 BtnMenuCoffee.addEventListener('click', functionClickCoffee);
@@ -53,6 +57,8 @@ function functionClickCoffee() {
     BtnUpdate.classList.remove("noActive");
     
     console.log("ClickCoffee");
+
+    
     
 }
 
@@ -69,7 +75,7 @@ function functionClickTea() {
     BtnUpdate.classList.add("noActive");
     
     console.log("ClickTea");
-    
+    modalCard.classList.add("open");
 }
 
 function functionClickDessert() {
